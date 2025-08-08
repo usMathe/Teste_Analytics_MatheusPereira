@@ -1,0 +1,86 @@
+Tarefas
+Parte 1: Programação em R ou Python
+Escolha entre R ou Python para resolver os problemas a seguir. Inclua os scripts com comentários explicativos e, quando necessário, forneça explicações adicionais no documento.
+
+
+
+1.   Limpeza e Análise de Dados de Vendas
+○    Crie um script para simular um dataset de vendas com pelo menos 50 registros, contendo as colunas: ID, Data, Produto, Categoria, Quantidade, Preço. O período dos dados deve ser de 01/01/2023 a 31/12/2023.
+
+○    Realize a limpeza dos dados, incluindo:
+
+■    Tratamento de valores faltantes
+
+■    Remoção de duplicatas
+
+■    Conversão de tipos de dados, se necessário
+
+○    Salve o dataset limpo em um arquivo data_clean.csv.
+
+○    Utilizando o dataset limpo, realize as seguintes análises:
+
+■    Calcule o total de vendas (Quantidade * Preço) por produto.
+
+■    Identifique o produto com o maior número de vendas totais.
+
+○    Salve seu código e nomeie adequadamente.
+
+2.   Análise Exploratória de Dados de Vendas
+○    Com o mesmo dataset simulado da tarefa anterior, crie visualizações/gráficos e com eles:
+
+■    Crie um gráfico de linha mostrando a tendência de vendas ao longo do tempo, analisando os dados mensalmente.
+
+■    Identifique e descreva pelo menos dois padrões ou insights interessantes que você observou nos dados.
+
+○    Salve seu código e nomeie adequadamente.
+
+
+
+
+
+
+
+
+
+Parte 2: SQL
+Com base nas tabelas geradas no exercício anterior, escreva consultas SQL para:
+
+●    Listar o nome do produto, categoria e a soma total de vendas (Quantidade * Preço) para cada produto. Ordene o resultado pelo valor total de vendas em ordem decrescente.
+
+●    Identificar os produtos que venderam menos no mês de junho de 2024.
+
+Salve suas consultas e a explicação da lógica em um arquivo chamado consultas_sql.sql.
+
+
+
+
+
+
+
+
+
+Parte 3: Interpretação de Resultados
+●    Com base nas análises realizadas nas Partes 1 e 2, escreva um breve relatório (máximo de 300 palavras) resumindo os principais insights encontrados e sugerindo possíveis ações baseadas nesses insights.
+
+Salve este relatório como relatorio_insights.md ou relatorio_insights.pdf.
+
+
+
+Critérios de Avaliação
+●    Clareza e organização dos arquivos, do código e da documentação
+
+●    Interpretação adequada dos resultados
+
+●    Uso apropriado de técnicas estatísticas e de análise de dados
+
+●    Qualidade e relevância das visualizações criadas
+
+●    Criatividade na abordagem dos problemas
+
+●    Capacidade de simular dados relevantes para os problemas propostos
+
+●    Habilidade em extrair insights significativos dos dados
+
+
+
+
