@@ -1,4 +1,5 @@
 import pandas as pd
+from sqlalchemy import create_engine
 
 dados_bruto = r'data\dados_bruto_vendas.csv'
 
@@ -24,5 +25,24 @@ else:
 
 # Remover valores duplicados
 df = df.drop_duplicates()
-print(df)
 df.to_csv('data/data_clean.csv', index=False)
+print(df)
+
+# --------- DADOS EM TABELA PARA O SQLite ---------
+# Salvar direto em um banco para fazer as consultas
+db_file = r'data\analise_vendas.db'
+table_name = 'vendas_teste'
+
+# Crie a conexão com o banco de dados.
+engine = create_engine(f'sqlite:///{db_file}')
+print(f"\n--- Conectando ao banco de dados: {db_file} ---")
+
+# Salve o DataFrame 'df' na tabela 'vendas' do banco.
+df.to_sql(
+    table_name,
+    con=engine,
+    if_exists='replace', # Apaga a tabela antiga e cria uma nova com os dados limpos
+    index=False          # Não salva o índice do pandas no banco
+)
+
+print(f"SUCESSO! Os dados foram salvos diretamente na tabela '{table_name}'.")

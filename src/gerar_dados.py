@@ -1,3 +1,10 @@
+
+""" 
+Observação: Se executar este código, os dados serão alterados, ou seja, as análises provavelmente não corresponderão aos novos dados. Portanto, 
+recomendo executar primeiro o arquivo visualizacao.py ou olhe apenas o png "grafico_vendas_da_analise.png" para ver o grafico das análises originais antes de prosseguir.
+
+"""
+
 from faker import Faker
 import datetime
 import random
